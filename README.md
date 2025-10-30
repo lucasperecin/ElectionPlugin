@@ -1,4 +1,4 @@
-# 🗳️ Sistema de Eleições para Minecraft
+# 🗳️ Election System for Minecraft!
 
 Um plugin completo e personalizável para Paper 1.21.8 que adiciona um sistema de eleições ao seu servidor Minecraft. Permite que jogadores votem em candidatos de forma interativa e segura.
 
