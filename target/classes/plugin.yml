@@ -1,6 +1,6 @@
 name: SistemaEleicoes
 version: 1.0.0
-main: com.pecing.eleicoes.SistemaEleicoes
+main: com.pecing.electionplugin.SistemaEleicoes
 api-version: 1.21
 description: Sistema de eleições para Minecraft
 author: Pecing
