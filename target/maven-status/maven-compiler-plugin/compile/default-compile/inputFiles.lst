@@ -1,5 +1,5 @@
-C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\commands\VotarCommand.java
-C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\commands\EleicaoCommand.java
-C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\managers\EleicaoManager.java
-C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\SistemaEleicoes.java
-C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\commands\ResultadoCommand.java
+C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\managers\ElectionManager.java
+C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\commands\ResultsCommand.java
+C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\commands\VoteCommand.java
+C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\ElectionSystem.java
+C:\Users\lucas\Desktop\electionplugin\electionplugin\ElectionPlugin\src\main\java\com\pecing\electionplugin\commands\ElectionCommand.java
