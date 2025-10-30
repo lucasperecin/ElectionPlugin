@@ -1,0 +1,25 @@
+name: SistemaEleicoes
+version: 1.0.0
+main: com.pecing.eleicoes.SistemaEleicoes
+api-version: 1.21
+description: Sistema de eleições para Minecraft
+author: Pecing
+
+commands:
+  votar:
+    description: Vote em um candidato
+    usage: /votar [candidato]
+  eleicao:
+    description: Gerencia a eleição
+    usage: /eleicao <criar|remover> <player>
+  resultado:
+    description: Mostra os resultados da eleição
+    usage: /resultado
+  resetareleicao:
+    description: Reseta toda a eleição
+    usage: /resetareleicao
+
+permissions:
+  eleicoes.admin:
+    description: Permissão para gerenciar eleições
+    default: op

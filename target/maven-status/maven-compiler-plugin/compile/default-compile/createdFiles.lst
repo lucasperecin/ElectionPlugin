@@ -1,0 +1,5 @@
+com\pecing\electionplugin\managers\EleicaoManager.class
+com\pecing\electionplugin\commands\ResultadoCommand.class
+com\pecing\electionplugin\commands\EleicaoCommand.class
+com\pecing\electionplugin\commands\VotarCommand.class
+com\pecing\electionplugin\SistemaEleicoes.class
