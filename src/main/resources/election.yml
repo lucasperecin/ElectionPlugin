@@ -1,0 +1,6 @@
+# Sistema de Eleições
+# Este arquivo armazena os dados da eleição
+
+candidates: []
+votes: {}
+playersWhoVoted: []

@@ -1,0 +1,6 @@
+# Mensagens de seleção de idioma
+language:
+  changed: "<green>✅ Idioma alterado para {language}!</green>"
+  not_found: "<red>❌ Idioma não encontrado. Idiomas disponíveis: {languages}</red>"
+  current: "<green>🌐 Seu idioma atual é {language}</green>"
+  available: "<gold>🌐 Idiomas disponíveis: {languages}</gold>"

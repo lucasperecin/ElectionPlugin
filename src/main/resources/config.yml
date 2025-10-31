@@ -1,0 +1,21 @@
+# Election System Configuration
+# Available languages: pt_BR, en_US
+
+# Plugin settings
+settings:
+  # Available languages: pt_BR, en_US
+  default-language: "en_US"
+  auto-save-interval: 300  # Auto-save data every 5 minutes (in seconds)
+  
+# Election settings
+election:
+  max-candidates: 10
+  allow-candidate-removal: true
+  broadcast-results: true
+  
+# Message settings
+messages:
+  # Whether to use action bars for notifications
+  use-action-bar: false
+  # Whether to show vote confirmations
+  show-vote-confirmations: true
