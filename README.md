@@ -1,87 +1,53 @@
-# 🗳️ Election System for Minecraft!
+# 🗳️ Election System for Minecraft
 
-Um plugin completo e personalizável para Paper 1.21.8 que adiciona um sistema de eleições ao seu servidor Minecraft. Permite que jogadores votem em candidatos de forma interativa e segura.
+A complete and customizable plugin for Paper 1.21.8 that adds an election system to your Minecraft server. Allows players to vote for candidates in an interactive and secure way.
 
-# NOTA
+## 📝 Note
 
-Desenvolvi esse plugin para uma dinâmica com meus amigos e decidi publicar aqui no GitHub.
- 
-## ✨ Características
+I developed this plugin for a dynamic with my friends and decided to publish it here on GitHub.
 
-- ✅ **Interface clicável** para votação
-- ✅ **Voto único** por jogador
-- ✅ **Armazenamento persistente** de dados
-- ✅ **Resultados em tempo real** com porcentagens
-- ✅ **Sistema de permissões** para administração
-- ✅ **Comandos intuitivos** e tab-completion
-- ✅ **Totalmente configurável**
+## ✨ Features
 
-## 🚀 Instalação
+- ✅ **Clickable interface** for voting
+- ✅ **Single vote** per player
+- ✅ **Persistent storage** of data
+- ✅ **Real-time results** with percentages
+- ✅ **Permission system** for administration
+- ✅ **Intuitive commands** with tab-completion
+- ✅ **Fully configurable**
+- ✅ **Multi-language support** (English, Portuguese)
+- ✅ **Multi-version compatibility**
 
-1. **Baixe** o arquivo `sistema-eleicoes-1.0.0.jar`
-2. **Cole** na pasta `plugins` do seu servidor
-3. **Reinicie** o servidor
-4. **Pronto!** O plugin está funcionando
+## 🚀 Installation
 
-## 📋 Comandos
+1. **Download** the `election-system-1.0.0.jar` file
+2. **Place** it in your server's `plugins` folder
+3. **Restart** the server
+4. **Done!** The plugin is working
 
-### 👤 Comandos para Jogadores
+## 📋 Commands
 
-| Comando | Descrição |
-|---------|-----------|
-| `/votar` | Mostra a lista de candidatos para votar |
-| `/resultado` | Mostra os resultados da eleição atual |
+### 👤 Commands for Players
 
-### ⚡ Comandos para Administradores (OP)
+| Command | Description |
+|---------|-------------|
+| `/vote` | Shows the list of candidates to vote for |
+| `/results` | Shows the results of the current election |
 
-| Comando | Descrição |
-|---------|-----------|
-| `/eleicao criar <player>` | Adiciona um candidato à eleição |
-| `/eleicao remover <player>` | Remove um candidato da eleição |
-| `/resetareleicao` | Reseta completamente a eleição |
+### ⚡ Commands for Administrators (OP)
 
-## 🎮 Como Usar
+| Command | Description |
+|---------|-------------|
+| `/election create <player>` | Adds a candidate to the election |
+| `/election remove <player>` | Removes a candidate from the election |
+| `/resetelection` | Completely resets the election |
+| `/election lang <language>` | Changes your language (pt_BR, en_US) |
 
-### 1. Configurando a Eleição
+## 🎮 How to Use
+
+### 1. Setting Up the Election
 ```mcfunction
-# Adicionar candidatos (como OP)
-/eleicao criar Steve
-/eleicao criar Alex
-/eleicao criar Enderman
-```
-### 2. Votação dos Jogadores
-```mcfunction
-/votar <candidato>
-``` 
-### 3. Verificando os resultados
-```mcfunction
-/resultado
-```
-### 4. Quando quiser começar uma nova eleição
-```mcfunction
-/resetareleicao
-```
-
-# Configuração
-
-O plugin cria automaticamente um arquivo de configuração em:
-plugins/SistemaEleicoes/eleicao.yml
-
-## Estrutura do arquivo de dados
-```yaml
-candidatos:
-  - steve
-  - alex
-votos:
-  jogador1: steve
-  jogador2: alex
-jogadoresQueVotaram:
-  - uuid-do-jogador1
-  - uuid-do-jogador2
-```
-
-# 🛡️ Permissões
-
-| Permissão | Descrição | Padrão |
-|---------|-----------|----------|
-| `electionplugin.admin` | Acesso aos comandos administrativos | op | 
+# Add candidates (as OP)
+/election create Steve
+/election create Alex
+/election create Enderman

@@ -122,5 +122,9 @@ public List<String> onTabComplete(CommandSender sender, Command command, String 
         sender.sendMessage(Component.text("/election create <player> - Adds a candidate", NamedTextColor.YELLOW));
         sender.sendMessage(Component.text("/election remove <player> - Removes a candidate", NamedTextColor.YELLOW));
         sender.sendMessage(Component.text("/resetelection - Resets the entire election", NamedTextColor.YELLOW));
+        sender.sendMessage(Component.text("/election lang <language> - Sets your preferred language", NamedTextColor.YELLOW));
+        sender.sendMessage(Component.text("/vote - Cast your vote", NamedTextColor.YELLOW));
+        sender.sendMessage(Component.text("/results - Shows the election results", NamedTextColor.YELLOW));
+        
     }
 }
