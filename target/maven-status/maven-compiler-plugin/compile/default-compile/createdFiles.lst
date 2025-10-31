@@ -1,4 +1,6 @@
+com\pecing\electionplugin\managers\ConfigManager.class
 com\pecing\electionplugin\ElectionSystem.class
+com\pecing\electionplugin\managers\LanguageManager.class
 com\pecing\electionplugin\commands\ResultsCommand.class
 com\pecing\electionplugin\commands\VoteCommand.class
 com\pecing\electionplugin\managers\ElectionManager.class
