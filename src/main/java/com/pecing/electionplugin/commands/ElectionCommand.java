@@ -49,7 +49,8 @@ public class ElectionCommand implements CommandExecutor, TabCompleter {
             case "lang":
             case "language":
                 if (!(sender instanceof Player)) {
-                    sender.sendMessage(plugin.getLanguageManager().getComponent("error.player_only", null));
+                    // Use Component.text instead of getComponent for fallback messages
+                    sender.sendMessage(Component.text("This command can only be used by players!", NamedTextColor.RED));
                     return true;
                 }
                 if (args.length < 2) {

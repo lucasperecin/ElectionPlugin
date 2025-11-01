@@ -18,12 +18,14 @@ public class LanguageManager {
     private final ConfigManager configManager;
     private final Map<String, FileConfiguration> languages;
     private final Map<UUID, String> playerLanguages;
+    private final MiniMessage miniMessage;
 
     public LanguageManager(ElectionSystem plugin, ConfigManager configManager) {
         this.plugin = plugin;
         this.configManager = configManager;
         this.languages = new HashMap<>();
         this.playerLanguages = new HashMap<>();
+        this.miniMessage = MiniMessage.miniMessage();
         loadLanguages();
     }
 
@@ -59,7 +61,11 @@ public class LanguageManager {
             placeholders.put("language", language);
             player.sendMessage(getComponent("language.changed", player, placeholders));
         } else {
-            player.sendMessage(getComponent("language.not_found", player));
+            // Get available languages for error message
+            String availableLangs = getAvailableLanguages();
+            Map<String, String> placeholders = new HashMap<>();
+            placeholders.put("languages", availableLangs);
+            player.sendMessage(getComponent("language.not_found", player, placeholders));
         }
     }
 
@@ -79,7 +85,8 @@ public class LanguageManager {
         if (langConfig == null) {
             langConfig = languages.get(configManager.getDefaultLanguage());
             if (langConfig == null) {
-                return "§cMessage not found: " + path;
+                // Return plain text without legacy formatting
+                return "Message not found: " + path;
             }
         }
 
@@ -93,7 +100,8 @@ public class LanguageManager {
                 }
             }
             if (message == null) {
-                return "§cMessage not found: " + path;
+                // Return plain text without legacy formatting
+                return "Message not found: " + path;
             }
         }
 
@@ -113,7 +121,13 @@ public class LanguageManager {
 
     public Component getComponent(String path, Player player, Map<String, String> placeholders) {
         String message = getMessage(path, player, placeholders);
-        return MiniMessage.miniMessage().deserialize(message);
+        try {
+            return miniMessage.deserialize(message);
+        } catch (Exception e) {
+            // Fallback to plain text if MiniMessage parsing fails
+            plugin.getLogger().warning("Failed to parse MiniMessage for path: " + path + " - " + e.getMessage());
+            return Component.text(message);
+        }
     }
 
     public void reloadLanguages() {

@@ -1,3 +1,13 @@
+# Mensagens de erro
+error:
+  no_permission: "<red>❌ Você não tem permissão para usar este comando!</red>"
+  player_only: "<red>❌ Este comando só pode ser executado por jogadores!</red>"
+  already_voted: "<red>❌ Você já votou nesta eleição!</red>"
+  candidate_not_found: "<red>❌ Candidato não encontrado!</red>"
+  candidate_exists: "<red>❌ Este candidato já existe!</red>"
+  no_candidates: "<yellow>ℹ️ Não há candidatos na eleição atual!</yellow>"
+  no_votes: "<yellow>ℹ️ Não há candidatos ou votos na eleição atual!</yellow>"
+
 # Mensagens de seleção de idioma
 language:
   changed: "<green>✅ Idioma alterado para {language}!</green>"
